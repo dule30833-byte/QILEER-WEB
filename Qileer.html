@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QI LE ER TOY INDUSTRY CO., LTD.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #e6f2ff;
+            color: #333;
+        }
+        /* 导航栏 */
+        .navbar {
+            background: #4a90e2;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar .logo {
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .navbar nav a {
+            color: white;
+            margin-left: 2rem;
+            text-decoration: none;
+        }
+        /* 公司简介 */
+        .company-profile {
+            padding: 2rem 5%;
+            background: white;
+            margin: 1rem 5%;
+            border-radius: 8px;
+        }
+        .company-profile h2 {
+            color: #4a90e2;
+            margin-bottom: 1rem;
+            border-bottom: 2px dashed #4a90e2;
+            padding-bottom: 0.5rem;
+        }
+        /* 生产展示 */
+        .service-system {
+            padding: 2rem 5%;
+        }
+        .service-system h2 {
+            color: #4a90e2;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px dashed #4a90e2;
+            padding-bottom: 0.5rem;
+        }
+        .facility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .facility-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .facility-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .facility-item p {
+            padding: 0.8rem;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+        /* 证书与产品展示 */
+        .product-display {
+            padding: 2rem 5%;
+            background: white;
+            margin: 1rem 5%;
+            border-radius: 8px;
+        }
+        .product-display h2 {
+            color: #4a90e2;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px dashed #4a90e2;
+            padding-bottom: 0.5rem;
+        }
+        .certifications {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+        }
+        .certifications img {
+            height: 40px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .product-item {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .product-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        /* 页脚 */
+        footer {
+            background: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="logo">QI LE ER TOY</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#profile">About Us</a>
+            <a href="#facility">Production</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- 公司简介 -->
+    <section id="profile" class="company-profile">
+        <h2>Company Profile</h2>
+        <p>QI LE ER TOY INDUSTRY CO., LTD. -- Founded in 1997 and located in Shantou, Guangdong, China, our company benefits from a strategic location and a well-established global trade network. Certified by BSCI and ISO9001, we adhere to stringent international standards for quality management and social responsibility. Our 20,000-square-meter production facility is equipped with 20 advanced production lines and supported by a dedicated team of 200 skilled professionals. We integrate product design, R&D, manufacturing, and sales into a comprehensive service chain, with a strong emphasis on innovation and originality.</p>
+        <br>
+        <p>Our independently developed products hold both domestic and international patents. To meet diverse market demands, our products comply with multiple authoritative certifications—including CE, ROHS, HR4040, UKCA (Europe), and ASTM, CPC, CPSIA (USA)—ensuring full adherence to regional safety and quality regulations.</p>
+    </section>
+
+    <!-- 生产与服务展示 -->
+    <section id="facility" class="service-system">
+        <h2>Service & System</h2>
+        <div class="facility-grid">
+            <div class="facility-item">
+                <img src="showroom.jpg" alt="Showroom">
+                <p>Showroom</p>
+            </div>
+            <div class="facility-item">
+                <img src="workshop.jpg" alt="Production Workshop">
+                <p>Production Workshop</p>
+            </div>
+            <div class="facility-item">
+                <img src="mould.jpg" alt="Mould Department">
+                <p>Mould Department</p>
+            </div>
+            <div class="facility-item">
+                <img src="design.jpg" alt="Design Studio">
+                <p>Design Studio</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品与证书展示 -->
+    <section id="products" class="product-display">
+        <h2>Product Display</h2>
+        <div class="certifications">
+            <img src="bsci.png" alt="BSCI">
+            <img src="iso9001.png" alt="ISO9001">
+            <img src="astm.png" alt="ASTM">
+            <img src="cpsia.png" alt="CPSIA">
+            <img src="cpc.png" alt="CPC">
+            <img src="en71.png" alt="EN71">
+            <img src="rohs.png" alt="ROHS">
+            <img src="ukca.png" alt="UKCA">
+            <img src="ce.png" alt="CE">
+            <img src="gcc.png" alt="GCC">
+            <img src="pahs.png" alt="PAHS">
+        </div>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="toy1.jpg" alt="Kitchen Toy">
+            </div>
+            <div class="product-item">
+                <img src="toy2.jpg" alt="Tool Bench">
+            </div>
+            <div class="product-item">
+                <img src="toy3.jpg" alt="Doll House">
+            </div>
+            <div class="product-item">
+                <img src="toy4.jpg" alt="Sand Table">
+            </div>
+            <div class="product-item">
+                <img src="toy5.jpg" alt="Construction Toy">
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <p>QI LE ER TOY INDUSTRY CO., LTD. © 2025 All Rights Reserved</p>
+        <p>Address: Shantou, Guangdong, China</p>
+    </footer>
+</body>
+</html>
